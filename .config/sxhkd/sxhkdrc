@@ -6,6 +6,10 @@
 shift + alt + t
 	alacritty
 
+# files manager
+shift + alt + e
+	nemo
+
 # program launcher
 shift + @space
 	rofi -combi-modi window,drun -theme solarized -font "hack 15" -show combi
@@ -20,7 +24,7 @@ super + Escape
 
 # f1
 XF86AudioRaiseVolume
-  pactl set-sink-volume 0 +5%
+	pactl set-sink-volume 0 +5%
 
 # f2
 XF86AudioLowerVolume

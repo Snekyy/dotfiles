@@ -5,35 +5,19 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-#
-# Exports
-#
-
-export PATH=$PATH:$HOME/.local/bin
-export LANG=en_US.UTF-8
-export XDG_CONFIG_HOME="$HOME/.config"
-export EDITOR=vim
-
-# History control
-export HISTCONTROL=ignoreboth	
-export HISTIGNORE='ls:ps:history*'
-#PROMPT_COMMAND='history -a'
-export HISTTIMEFORMAT='%d.%m.%Y %H:%M:%S: '
-
 
 #
 # Aliases
 #
 
-# Replace ls with exa
+# Colorize ls/grep/cat
 alias ls='exa --color=always --group-directories-first'
 alias la='exa -aFG --color=always --group-directories-first'
 alias ll='exa -lgFG --color=always --group-directories-first'
 alias lla='exa -lagFG --color=always --group-directories-first'
 alias lt='exa -T --color=always --group-directories-first'
-
-# Colorize grep output
 alias grep='grep --color=auto'
+alias cat='highlight --out-format=ansi'
 
 # Confirm before overwriting something
 alias rm='rm -i'
@@ -43,14 +27,9 @@ alias mv='mv -i'
 alias ..='cd ..'
 alias n='nnn -d'
 
-# Pacman
 # remove orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
-
-
-# Default bash PS1
-#PS1='\u > \W > \$ '
 
 # Zsh like PS1
 #PS1="\n \[\033[0;34m\]┌─────(\[\033[1;35m\]\u\[\033[0;34m\])─────(\[\033[1;32m\]\w\[\033[0;34m\]) \n └> \[\033[1;36m\]\$ \[\033[0m\]"
