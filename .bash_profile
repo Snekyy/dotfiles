@@ -14,7 +14,7 @@ HISTTIMEFORMAT='%d.%m.%Y %H:%M:%S: '
 
 #[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
 # Start graphical server if bspwm if not already running
-if [ "$(tty)" = "/dev/tty1" ]; then
-	pgrep -x bspwm || exec startx
-fi
+#if [ "$(tty)" = "/dev/tty1" ]; then
+#	pgrep -x bspwm || exec startx
+#fi
 

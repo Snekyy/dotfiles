@@ -6,13 +6,14 @@
 shift + alt + t
 	alacritty
 
-# files manager
-shift + alt + e
-	nemo
-
 # program launcher
 shift + @space
-	rofi -combi-modi window,drun -theme solarized -font "hack 15" -show combi
+	rofi -show drun
+
+# files manager
+shift + alt + e
+	rofi -show file-browser
+
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -77,12 +78,7 @@ super + ctrl + {m,x,y,z}
 
 # change keyboard layout
 alt + @space
-	/bin/bash /home/snekyy/scripts/chg_layout.sh
-
-# flameshot screenshot
-#super + <F11>
-#	flameshot screen -p /home/snekyy/Pictures/
-
+	/bin/bash /home/snekyy/.config/sxhkd/scripts/chg_layout.sh
 
 # focus/swap
 #

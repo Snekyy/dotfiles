@@ -30,6 +30,8 @@ alias n='nnn -d'
 # remove orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
+# current local ip
+alias myip="ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'"
 
 # Zsh like PS1
 #PS1="\n \[\033[0;34m\]┌─────(\[\033[1;35m\]\u\[\033[0;34m\])─────(\[\033[1;32m\]\w\[\033[0;34m\]) \n └> \[\033[1;36m\]\$ \[\033[0m\]"
