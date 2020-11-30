@@ -1,0 +1,6 @@
+configuration {
+	modi: "file-browser,drun";
+	theme: "Adapta-Nokto";
+	font: "Hack 15";
+	combi-modi: "drun";
+}
