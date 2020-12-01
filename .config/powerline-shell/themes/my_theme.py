@@ -3,20 +3,20 @@ from powerline_shell.themes.default import DefaultColor
 
 class Color(DefaultColor):
     """Basic theme which only uses colors in 0-15 range"""
-    USERNAME_FG = 129
+    USERNAME_FG = 15
     USERNAME_BG = 15
     USERNAME_ROOT_BG = 1
 
-    HOSTNAME_FG = 15 # white
-    HOSTNAME_BG = 129 # purple
+    HOSTNAME_FG = 15
+    HOSTNAME_BG = 39
 
     HOME_SPECIAL_DISPLAY = True
-    HOME_BG = 129
+    HOME_BG = 27
     HOME_FG = 15
-    PATH_BG = 15  # dark grey
-    PATH_FG = 129  # light grey
-    CWD_FG = 129  # white
-    SEPARATOR_FG = 129
+    PATH_BG = 33  # dark grey
+    PATH_FG = 15  # light grey
+    CWD_FG = 15  # white
+    SEPARATOR_FG = 15
 
     READONLY_BG = 1
     READONLY_FG = 15
@@ -29,7 +29,7 @@ class Color(DefaultColor):
     JOBS_FG = 14
     JOBS_BG = 8
 
-    CMD_PASSED_BG = 92
+    CMD_PASSED_BG = 33
     CMD_PASSED_FG = 15
     CMD_FAILED_BG = 125 # DeepPink4
     CMD_FAILED_FG = 15
@@ -43,5 +43,5 @@ class Color(DefaultColor):
     AWS_PROFILE_FG = 14
     AWS_PROFILE_BG = 8
 
-    TIME_FG = 129 # purple (heart symbol)
+    TIME_FG = 33
     TIME_BG = 15
