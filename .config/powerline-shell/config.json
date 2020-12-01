@@ -29,5 +29,5 @@
   "hostname": {
     "colorize": false
   },
-  "theme": "/home/snekyy/.config/powerline-shell/themes/my_theme.py"
+  "theme": "/home/snekyy/.config/powerline-shell/themes/blue.py"
 }
