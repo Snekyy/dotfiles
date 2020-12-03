@@ -5,19 +5,19 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-
 #
 # Aliases
 #
 
-# Colorize ls/grep/cat
+# Colorize
 alias ls='exa --color=always --group-directories-first'
 alias la='exa -aFG --color=always --group-directories-first'
 alias ll='exa -lgFG --color=always --group-directories-first'
 alias lla='exa -lagFG --color=always --group-directories-first'
 alias lt='exa -T --color=always --group-directories-first'
-alias grep='grep --color=auto'
 alias cat='highlight --out-format=ansi'
+alias grep='grep --color=always'
+alias pacman='pacman --color=always'
 
 # Confirm before overwriting something
 alias rm='rm -i'
@@ -27,17 +27,16 @@ alias mv='mv -i'
 alias ..='cd ..'
 alias n='nnn -d'
 
+# Pacman
 # remove orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
-# current local ip
-alias myip="ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'"
-
-# Exec shell
+# exec shell
 alias reload='exec $SHELL'
 
-# Zsh like PS1
-#PS1="\n \[\033[0;34m\]┌─────(\[\033[1;35m\]\u\[\033[0;34m\])─────(\[\033[1;32m\]\w\[\033[0;34m\]) \n └> \[\033[1;36m\]\$ \[\033[0m\]"
+#
+# PS1
+#
 
 # powerline-shell PS1
 function _update_ps1() {
@@ -48,8 +47,12 @@ if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
 	    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 
+#
+# Commands
+#
+
 ### ARCHIVE EXTRACTION
-# usage: ex <file>
+# usage: ex <archive>
 ex ()
 {
   if [ -f $1 ] ; then
