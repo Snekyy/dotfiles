@@ -33,5 +33,6 @@ fi
 
 setxkbmap us &
 xsetroot -cursor_name left_ptr &
+xset r rate 300 50
 feh --bg-scale /home/snekyy/Pictures/wallpapers/0113.jpg
 exec bspwm
