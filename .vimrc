@@ -1,35 +1,25 @@
-call plug#begin('~/.vim/plugged')
-
-Plug 'artanikin/vim-synthwave84'
-
-call plug#end()
-
+" syntax highlight
+syntax on
 filetype on
 filetype indent on
 filetype indent plugin on
 
-syntax enable
-set background=dark
-se t_Co=256
-"colorscheme synthwave84
-
-" Пронумеровка строк
+" lines enumeration
 set number
 
-" Поддержка мыши
-"set mouse=a
-
-" Кодировка
+" encoding
 set encoding=utf-8
 
-" Перенос на новую строку при перемещениями стрелочками
+" Move to next string if cursor in the end of current
 set whichwrap=b,s,<,>,[,]
 
-" Проверка орфографии
-"set spell
-"set spelllang=ru
-
+" No empty lines in the end of file
 set guiheadroom=0
+
+" normal paste
+set tabstop=5
+set shiftwidth=4
+set noexpandtab
 
 " Fixes mouse issues using Alacritty terminal emulator
 set ttymouse=sgr
