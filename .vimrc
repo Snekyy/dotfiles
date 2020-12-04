@@ -27,6 +27,9 @@ highlight ColorColumn ctermbg=1 guibg=lightgrey
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
+Plug 'https://github.com/Badacadabra/vim-archery'
+Plug 'https://github.com/wadackel/vim-dogrun'
+Plug 'https://github.com/ycm-core/YouCompleteMe'
 
 call plug#end()
 

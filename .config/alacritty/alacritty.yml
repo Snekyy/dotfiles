@@ -145,13 +145,13 @@ font:
 colors:
   # Default colors
   primary:
+    #purple_bg:  #292c3e
     background: '#262626'
     foreground: '#EBEBEB'
 
   # Selection color
   selection:
     text: '#011f1d'
-    background: '#bababa'
 
   # Cursor colors
   cursor:
@@ -172,15 +172,6 @@ colors:
   #
   # Allowed values are CellForeground and CellBackground, which reference the
   # affected cell, or hexadecimal colors like #ff00ff.
-  #search:
-  #  matches:
-  #    foreground: '#000000'
-  #    background: '#ffffff'
-  #
-  #  bar:
-  #    background: CellForeground
-  #    foreground: CellBackground
-
   # Dim colors
   # If the dim colors are 
   # on the `normal` colors.
