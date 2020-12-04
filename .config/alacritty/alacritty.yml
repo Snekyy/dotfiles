@@ -103,7 +103,7 @@ scrolling:
 #    \/_/ \/___/  \/_/\/_/\/__/\/___/
 
 font:
-  size: 18
+  size: 10
 
   normal:
     family: Hack
@@ -146,7 +146,7 @@ colors:
   # Default colors
   primary:
     #purple_bg:  #292c3e
-    background: '#262626'
+    background: '#292c3e'
     foreground: '#EBEBEB'
 
   # Selection color

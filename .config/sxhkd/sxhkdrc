@@ -12,7 +12,7 @@ shift + @space
 
 # files manager
 shift + alt + e
-	rofi -show file-browser
+	alacritty -e nnn -dCeHoQ -t 20	
 
 # change keyboard layout
 alt + space
@@ -67,14 +67,6 @@ ctrl + shift + w
 	bspc node -k
 
 
-# send the newest marked node to the newest preselected node
-super + y
-	bspc node newest.marked.local -n newest.!automatic.local
-
-# swap the current node and the biggest window
-super + g
-	bspc node -s biggest.window
-
 #
 # state/flags
 #
@@ -99,12 +91,12 @@ super + shift + t
 super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
 
+# focus windows
+ctrl + {h,j,k,l}
+	bspc node -f {west,south,north,east}	
+
 # focus/swap
 #
-
-# focus the node in the given direction
-super + {_,shift + }{h,j,k,l}
-	bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
 super + {p,b,comma,period}
@@ -123,8 +115,7 @@ super + {grave,Tab}
 	bspc {node,desktop} -f last
 
 # focus the older or newer node in the focus history
-super + {o,i}
-	bspc wm -h off; \
+super + {o,i} bspc wm -h off; \
 	bspc node {older,newer} -f; \
 	bspc wm -h on
 

@@ -24,6 +24,7 @@ alias rm='rm -i'
 alias mv='mv -i'
 
 # Navigation
+alias n="nnn -dCeHoQ -t 20"
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'

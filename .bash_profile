@@ -14,6 +14,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR="vim"
 export TERMINAL="alacritty"
 export BROWSER="firefox"
+export NNN_LOCKER=snowmachine
 
 # History control
 #

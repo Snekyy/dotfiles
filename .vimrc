@@ -28,10 +28,11 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
 Plug 'https://github.com/Badacadabra/vim-archery'
-Plug 'https://github.com/wadackel/vim-dogrun'
-Plug 'https://github.com/ycm-core/YouCompleteMe'
+Plug 'https://github.com/kristijanhusak/vim-hybrid-material'
 
 call plug#end()
 
-colorscheme gruvbox
 set background=dark
+let g:hybrid_transparent_background = 1
+let g:enable_bold_font = 1
+colorscheme hybrid_material
