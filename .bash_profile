@@ -15,12 +15,11 @@ export EDITOR="vim"
 export TERMINAL="alacritty"
 export BROWSER="firefox"
 
-#
 # History control
 #
 
-HISTCONTROL=ignoreboth	
-HISTIGNORE='ls:ps:history*'
-HISTTIMEFORMAT='%d.%m.%Y %H:%M:%S:'
-HISTSIZE=9999999999999999999999999
+export HISTCONTROL=ignoreboth	
+export HISTIGNORE='ls:ps:history*'
+export HISTTIMEFORMAT='%d.%m.%Y %H:%M:%S:'
+export HISTSIZE=9999999999999999999999999
 

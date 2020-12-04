@@ -1,25 +1,34 @@
-" syntax highlight
+" powerline
+let g:powerline_pycmd="py3"
+set laststatus=2
+set rtp+=/usr/share/powerline/bindings/vim
+
 syntax on
-filetype on
-filetype indent on
-filetype indent plugin on
 
-" lines enumeration
-set number
-
-" encoding
+set nu
+" set nowrap
 set encoding=utf-8
-
-" Move to next string if cursor in the end of current
 set whichwrap=b,s,<,>,[,]
-
-" No empty lines in the end of file
 set guiheadroom=0
-
-" normal paste
-set tabstop=5
+set tabstop=4
+set softtabstop=4
 set shiftwidth=4
 set noexpandtab
-
-" Fixes mouse issues using Alacritty terminal emulator
+set noswapfile
+set noerrorbells
+set undodir=~/.vim/undodir
+set undofile
 set ttymouse=sgr
+
+set colorcolumn=80
+highlight ColorColumn ctermbg=1 guibg=lightgrey
+
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'morhetz/gruvbox'
+
+call plug#end()
+
+colorscheme gruvbox
+set background=dark

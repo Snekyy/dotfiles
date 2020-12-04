@@ -25,7 +25,8 @@ alias mv='mv -i'
 
 # Navigation
 alias ..='cd ..'
-alias n='nnn -d'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 
 # Pacman
 # remove orphaned packages

@@ -1,33 +1,22 @@
 {
-  "segments": [
-    "virtual_env",
-    "aws_profile",
-    "ssh",
-    "cwd",
-    "git",
-    "git_stash",
-    "jobs",
-    "set_term_title",
-    "svn",
-    "newline",
-    "time",
-    "hostname",
-    "root"
-  ],
-  "cwd": {
-    "mode": "default",
-    "max_depth": 3,
-    "max_dir_size": 0,
-    "full_cwd": false
-  },
-  "vcs" : {
-    "show_symbol": true
-  },
-  "time": {
-    "format": "❤"
-  },
-  "hostname": {
-    "colorize": false
-  },
-  "theme": "/home/snekyy/.config/powerline-shell/themes/blue.py"
+	"segments": [
+		"cwd",
+		"newline",
+		"time",
+		"hostname",
+		"root"
+	],
+	"cwd": {
+		"mode": "default",
+		"max_depth": 3,
+		"max_dir_size": 0,
+		"full_cwd": false
+	},
+	"time": {		
+		"format": "❤"
+	},
+	"hostname": {
+		"colorize": false
+	},
+	"theme": "~/.config/powerline-shell/themes/darky-green.py"
 }
