@@ -8,8 +8,8 @@
 	],
 	"cwd": {
 		"mode": "default",
-		"max_depth": 3,
-		"max_dir_size": 0,
+		"max_depth": 4,
+		"max_dir_size": 15,
 		"full_cwd": false
 	},
 	"time": {		
@@ -18,5 +18,5 @@
 	"hostname": {
 		"colorize": false
 	},
-	"theme": "~/.config/powerline-shell/themes/purple.py"
+	"theme": "~/.config/powerline-shell/themes/gruvbox-dark.py"
 }

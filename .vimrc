@@ -5,7 +5,7 @@ set rtp+=/usr/share/powerline/bindings/vim
 
 syntax on
 
-set nu
+"set nu
 " set nowrap
 set encoding=utf-8
 set whichwrap=b,s,<,>,[,]
@@ -35,4 +35,4 @@ call plug#end()
 set background=dark
 let g:hybrid_transparent_background = 1
 let g:enable_bold_font = 1
-colorscheme hybrid_material
+colorscheme gruvbox
