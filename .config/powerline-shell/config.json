@@ -18,5 +18,5 @@
 	"hostname": {
 		"colorize": false
 	},
-	"theme": "~/.config/powerline-shell/themes/gruvbox-dark.py"
+	"theme": "~/.config/powerline-shell/themes/green.py"
 }

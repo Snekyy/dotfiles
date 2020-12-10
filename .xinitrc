@@ -33,6 +33,6 @@ fi
 
 setxkbmap us &
 xsetroot -cursor_name left_ptr &
-xset r rate 300 50
+xset r rate 410 60
 nitrogen --restore
 exec bspwm
