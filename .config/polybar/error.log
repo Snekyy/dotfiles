@@ -1,4 +1,0 @@
-
-polybar|warn:  The config parameter `module/keyboard.label-indicator` is deprecated, use `module/keyboard.label-indicator-on` instead.
-polybar|warn:  The config parameter `module/keyboard.label-indicator` is deprecated, use `module/keyboard.label-indicator-on` instead.
-polybar|warn:  The config parameter `module/keyboard.label-indicator` is deprecated, use `module/keyboard.label-indicator-on` instead.
