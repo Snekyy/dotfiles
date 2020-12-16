@@ -5,9 +5,6 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# fuckcmd
-eval "$(thefuck --alias)"
-
 #
 # Aliases
 #
@@ -20,14 +17,15 @@ alias lla='exa -lagFG --color=always --group-directories-first'
 alias lt='exa -T --color=always --group-directories-first'
 alias ccat='highlight --out-format=ansi'
 alias grep='grep --color=always'
-alias pacman='pacman --color=always'
+alias pacman='sudo pacman --color=always'
+alias p='sudo pacman --color=always'
+alias yay='yay --color=always'
 
 # Confirm before overwriting something
 alias rm='rm -i'
 alias mv='mv -i'
 
 # Navigation
-alias n="nnn -dCeHoQ -t 20"
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -39,11 +37,8 @@ alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 # exec shell
 alias reload='exec $SHELL'
 
-# please 
-alias please="sudo"
-
 #
-# PS1
+# Prompt
 #
 
 # powerline-shell PS1

@@ -33,6 +33,7 @@ fi
 
 setxkbmap us &
 xsetroot -cursor_name left_ptr &
-xset r rate 410 60
+# for vim xset r rate 280 50
+xset r rate 350 60 
 nitrogen --restore
 exec bspwm

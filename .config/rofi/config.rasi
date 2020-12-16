@@ -1,11 +1,11 @@
 configuration {
-	modi: "window,drun";
+	modi: "window,run";
 	width: 40;
 	lines: 15;
 	columns: 1;
 	theme: "flat-orange";
 	font: "Hack 15";
-	combi-modi: "window,drun";
+	combi-modi: "window,run";
 	cache-dir: "/home/snekyy/.config/rofi/cache";
 	display-keys: false;	
 	/* key bindings */ 

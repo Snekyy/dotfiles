@@ -8,7 +8,7 @@ shift + alt + t
 
 # program launcher
 shift + @space
-	rofi -show drun
+	rofi -show run
 
 # files manager
 shift + alt + e
@@ -64,7 +64,7 @@ super + alt + {q,r}
 
 # kill window
 ctrl + shift + w
-	bspc node -k
+	bspc node -c
 
 
 #
