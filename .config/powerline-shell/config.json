@@ -1,15 +1,18 @@
 {
 	"segments": [
 		"cwd",
+		"read_only",
 		"newline",
 		"time",
-		"hostname",
+		"ssh",
+		"virtual_env",
+		"git",
 		"root"
 	],
 	"cwd": {
 		"mode": "default",
 		"max_depth": 4,
-		"max_dir_size": 15,
+		"max_dir_size": 20,
 		"full_cwd": false
 	},
 	"time": {		
