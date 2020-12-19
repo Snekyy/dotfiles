@@ -9,6 +9,8 @@ colors:
     red: '0xfb4934'
     white: '0xebdbb2'
     yellow: '0xfabd2f'
+  cursor:
+    cursor: '0xcc241d'
   normal:
     black: '0x282828'
     blue: '0x458588'

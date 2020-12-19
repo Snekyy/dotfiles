@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 
+echo > /home/snekyy/.config/picom/error.log
 # Terminate already running picom
 killall -q picom
 
@@ -7,4 +8,4 @@ killall -q picom
 while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
 
 # Launch picom
-picom --experimental-backends --config $HOME/.config/picom/picom.conf --log-level "WARN" --show-all-xerrors 2>>$HOME/.config/picom/error.log &
+picom --experimental-backends -CGb --config /home/snekyy/.config/picom/picom.conf --show-all-xerrors --log-level "WARN" 2>>$HOME/.config/picom/error.log &
