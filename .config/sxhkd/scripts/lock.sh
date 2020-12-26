@@ -1,19 +1,19 @@
 #aur/i3lock-color-git
 
-insidevercolor=28282aff 
-insidewrongcolor=28282aff
-insidecolor=28282aff
-ringvercolor=52393bff
-ringwrongcolor=52393bff
-ringcolor=52393bff
-linecolor=52393bff
-keyhlcolor=8c8c8cff
+insidevercolor=0f0f0fff 
+insidewrongcolor=0f0f0fff 
+insidecolor=0f0f0fff
+ringvercolor=ffffffff
+ringwrongcolor=bf4040ff
+ringcolor=ffffffff
+linecolor=0f0f0fff
+keyhlcolor=67b045ff
 bshlcolor=bf4040ff
-separatorcolor=00000000
+separatorcolor=ffffff00
 verifcolor=52393bff
-wrongcolor=52393bff
-color=28282aff
-timecolor=52393bff
+wrongcolor=bf4040ff
+color=0f0f0fff
+timecolor=ffffffff
 
 i3lock -e \
     --clock --indicator \
@@ -52,4 +52,6 @@ i3lock -e \
     --date-font=Hack \
     --datesize=55 \
     --timesize=130  \
-    --datepos="tx:700"
+    --datepos="tx:700" \
+    \
+    --line-uses-ring

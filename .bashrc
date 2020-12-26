@@ -41,14 +41,17 @@ alias reload='exec $SHELL'
 # Prompt
 #
 
-# powerline-shell PS1
-function _update_ps1() {
-	    PS1=$(powerline-shell $?)
-}
+# minimalistic
+PS1=" \w \[\033[01;31m\]>\[\033[01;32m\]>\[\033[01;34m\]>\[\033[00m\] "
 
-if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
-	    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-fi
+# powerline-shell PS1
+#function _update_ps1() {
+#	    PS1=$(powerline-shell $?)
+#}
+
+#if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+#	    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+#fi
 
 #
 # Commands

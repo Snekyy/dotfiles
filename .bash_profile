@@ -15,6 +15,7 @@ export EDITOR="vim"
 export TERMINAL="alacritty"
 export BROWSER="firefox"
 
+#
 # History control
 #
 

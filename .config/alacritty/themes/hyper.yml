@@ -1,12 +1,12 @@
 colors:
     primary:
-      background: '0x000000'
+      background: '0x0f0f0f'
       foreground: '0xffffff'
     cursor:
       text:   '0xF81CE5'
-      cursor: '0xffffff'
+      cursor: '0xfe0100'
     normal:
-      black:   '0x000000'
+      black:   '0x0f0f0f'
       red:     '0xfe0100'
       green:   '0x33ff00'
       yellow:  '0xfeff00'

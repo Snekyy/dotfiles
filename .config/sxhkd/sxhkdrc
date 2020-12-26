@@ -8,7 +8,7 @@ shift + alt + t
 
 # program launcher
 shift + @space
-	rofi -show run
+	rofi -show drun
 
 # files manager
 shift + alt + e
@@ -54,8 +54,8 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
 	brightnessctl set 5%-
 
-# F11
-Print
+# F11 (Print button)
+super + p
 	flameshot gui
 
 #
