@@ -16,7 +16,11 @@ shift + alt + e
 
 # change keyboard layout
 alt + space
-      /bin/bash /home/snekyy/.config/sxhkd/scripts/chg_layout.sh
+    /bin/bash /home/snekyy/.config/sxhkd/scripts/chg_layout.sh
+
+# lock screen
+super + l
+    /bin/bash /home/snekyy/.config/sxhkd/scripts/lock.sh
 
 #
 # sxhkd binds
@@ -66,7 +70,6 @@ super + alt + {q,r}
 ctrl + shift + w
 	bspc node -c
 
-
 #
 # state/flags
 #
@@ -94,6 +97,10 @@ super + ctrl + {m,x,y,z}
 # focus windows
 ctrl + {h,j,k,l}
 	bspc node -f {west,south,north,east}	
+
+# hide all windows(show desktop)
+super + d
+    /bin/bash /home/snekyy/.config/sxhkd/scripts/toggle_hide_windows.sh
 
 # focus/swap
 #

@@ -3,7 +3,7 @@ configuration {
 	width: 40;
 	lines: 15;
 	columns: 1;
-	theme: "flat-orange";
+	theme: "~/.config/rofi/themes/gruvbox-dark-soft";
 	font: "Hack 15";
 	combi-modi: "window,run";
 	cache-dir: "/home/snekyy/.config/rofi/cache";
