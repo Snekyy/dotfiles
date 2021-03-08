@@ -15,6 +15,13 @@ wrongcolor=bf4040ff
 color=0f0f0fff
 timecolor=ffffffff
 
+# if exit with "ru" layout you will can't enter password
+# with english characters, so
+# you will be stacked forever in this shit
+if [ $(./current_layout.sh) == "ru" ]; then
+	./chg_layout.sh
+fi
+
 i3lock -e \
     --clock --indicator \
     \

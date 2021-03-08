@@ -87,8 +87,8 @@ super + t
 	bspc node -t tiled
 
 # Pseudo-tiling mode
-super + shift + t
-	bspc node -t pseudo_tiled
+#super + shift + t
+#	bspc node -t pseudo_tiled
 
 # set the node flags
 super + ctrl + {m,x,y,z}

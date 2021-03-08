@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CURRENT_LAYOUT=$(setxkbmap -query|awk -F : 'NR==3{print $2}'|sed 's/ //g')
+CURRENT_LAYOUT=$(./current_layout.sh)
 
 if [ "$CURRENT_LAYOUT" = "us" ]; then
     setxkbmap "ru"
