@@ -1,0 +1,11 @@
+[user]
+	email = snekyy@protonmail.com
+	name = Snekyy
+[advice]
+	addIgnoredFile = false
+[pull]
+	rebase = false
+[alias]
+	graph = log --oneline --graph --all
+[init]
+	defaultBranch = master
