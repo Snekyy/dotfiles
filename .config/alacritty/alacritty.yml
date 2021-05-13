@@ -22,14 +22,14 @@ colors:
     white: '0xd0d0d0'
     yellow: '0xfeff00'
   primary:
-    background: '0x0f0f0f'
+    background: '0x282828'
     foreground: '0xffffff'
 cursor:
   style: Beam
   thickness: 0.2
   unfocused_hollow: true
 debug:
-  log_level: None
+  log_level: WARN
   persistent_logging: false
   print_events: false
   render_timer: false
@@ -54,7 +54,7 @@ font:
   offset:
     x: 0 
     y: 1 
-  size: 19
+  size: 15
 key_bindings:
 - action: Paste
   key: V
