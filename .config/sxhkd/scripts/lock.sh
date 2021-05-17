@@ -15,10 +15,10 @@ wrongcolor=bf4040ff
 color=0f0f0fff
 timecolor=ffffffff
 
-# if exit with "ru" layout you will can't enter password
+# if you lock screen with "ru" layout you will can't enter password
 # with english characters, so
 # you will be stacked forever in this shit
-if [ $(./current_layout.sh) == "ru" ]; then
+if [ $(setxkbmap -query|awk -F : 'NR==3{print $2}' | sed 's/ //g') == "ru" ]; then
 	./chg_layout.sh
 fi
 
