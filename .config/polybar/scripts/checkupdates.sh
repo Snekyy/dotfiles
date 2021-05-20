@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
-get_total_updates() { UPDATES=$(checkupdates 2>/dev/null | wc -l); }
+get_total_updates() {
+echo $(checkupdates 2>/dev/null | wc -l);
+}
 
 while true; do
-    echo "$UPDATES"
-    sleep 30
     get_total_updates
+	sleep 30
 done
