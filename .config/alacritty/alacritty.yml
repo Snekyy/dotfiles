@@ -83,10 +83,6 @@ key_bindings:
 live_config_reload: true
 mouse:
   hide_when_typing: true
-  url:
-    launcher:
-      args: []
-      program: xdg-open
 scrolling:
   history: 10000
 shell:
