@@ -16,7 +16,6 @@ alias la='exa -aFG --color=always --group-directories-first'
 alias ll='exa -lgFG --color=always --group-directories-first'
 alias lla='exa -lagFG --color=always --group-directories-first'
 alias lt='exa -T --color=always --group-directories-first'
-alias cat='highlight --out-format=ansi'
 alias grep='grep --color=always'
 alias pacman='sudo pacman --color=always'
 alias p='sudo pacman --color=always'
@@ -43,10 +42,7 @@ alias reload='exec $SHELL'
 # Prompt
 #
 
-if [ $(which powerline-shell --help &> /dev/null; echo $?) -gt 0 ] ; then
-    # Default
-    PS1=" \w \[\033[01;31m\]>\[\033[01;32m\]>\[\033[01;34m\]>\[\033[00m\] "
-else
+if [ $(which powerline-shell &> /dev/null; echo $?) -eq 0 ] ; then
     # Powerline-shell
     function _update_ps1() {
         PS1=$(powerline-shell $?)
@@ -55,6 +51,9 @@ else
     if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
         PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
     fi
+else
+    # Default
+    PS1=" \w \[\033[01;31m\]>\[\033[01;32m\]>\[\033[01;34m\]>\[\033[00m\] "
 fi
 
 
