@@ -19,7 +19,7 @@ timecolor=ffffffff
 # with english characters, so
 # you will be stacked forever in this shit
 if [ $(setxkbmap -query|awk -F : 'NR==3{print $2}' | sed 's/ //g') == "ru" ]; then
-	./chg_layout.sh
+	bash ~/.config/sxhkd/scripts/chg_layout.sh
 fi
 
 i3lock -e \
