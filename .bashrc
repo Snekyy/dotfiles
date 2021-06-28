@@ -13,7 +13,7 @@
 # Colorize
 alias ls='exa --color=always --group-directories-first'
 alias la='exa -aFG --color=always --group-directories-first'
-alias ll='exa -lgFG --color=always --group-directories-first'
+alias ll='exa -lgF --color=always --group-directories-first'
 alias lla='exa -lagFG --color=always --group-directories-first'
 alias lt='exa -T --color=always --group-directories-first'
 alias grep='grep --color=always'
@@ -78,6 +78,7 @@ if [ -f $1 ] ; then
         *.Z)         uncompress $1;;
         *.7z)        7z x $1      ;;
         *.deb)       ar x $1      ;;
+        *.xz)        unxz $1      ;;
         *.tar.xz)    tar xf $1    ;;
         *.tar.zst)   unzstd $1    ;;
         *)           echo "'$1' cannot be extracted via ex()" ;;
