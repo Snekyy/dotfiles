@@ -18,11 +18,14 @@ export BROWSER="firefox"
 export PAGER="less"
 
 #
-# History control
+# History tuning
 #
 
+export HISTTIMEFORMAT='%h %d %H:%M:%S '
+# the maximum number of lines contained in the history file
+export HISTSIZE=10000
+# don’t save lines which begin with a <space> character and
+# don’t save lines matching the previous history entry
 export HISTCONTROL=ignoreboth	
-export HISTIGNORE='ls:ps:history*'
-export HISTTIMEFORMAT='%d.%m.%Y %H:%M:%S:'
-export HISTSIZE=9999999999999999999999999
+export HISTIGNORE='ls:la:ll:lla:lt:ps:history*'
 
