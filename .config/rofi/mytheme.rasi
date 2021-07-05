@@ -1,0 +1,79 @@
+* {
+	highlight: bold #ffaf00;
+    main: #ffaf00;
+
+    background:                  #202020;
+    background-selected:         #4d4741;
+    background-alternate:        #272525;
+    background-color:            @background;
+    foreground:                  #ebdbb2;
+    foreground-selected:         #fbf1c7;
+    border-color:                #404040;
+
+    normal-background:           @background;
+    normal-foreground:           @foreground;
+
+    selected-normal-background:  @background-selected;
+    selected-normal-foreground:  @foreground-selected;
+    
+    alternate-normal-background: @background-alternate;
+    alternate-normal-foreground: @foreground;
+
+    font: "Hack 15";
+}
+
+window {
+    background-color: @background;
+	padding: 5;
+    border: 2;
+    border-color: @border-color; 
+}
+
+mainbox {
+    border: 0;
+    padding: 0;
+}
+
+inputbar {
+    spacing:    0;
+    text-color: @foreground;
+    padding:    0px;
+}
+
+prompt {
+	text-color: @main;
+    padding: 2px 15px 3px 7px;
+}
+
+entry {
+    text-color: @foreground;
+    padding: 3px 0px 0px 0px;
+    font: "Hack 13";
+}
+
+listview {
+    border:       2px 0 0;
+	padding:      5px 2 2;
+    border-color: @border-color;
+    spacing:      4px;
+}
+
+element {
+    border: 0;
+    padding: 1 0 1 5;
+}
+
+element.normal.normal {
+    background-color: @normal-background;
+    text-color:       @normal-foreground;
+}
+
+element.selected.normal {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+}
+
+element.alternate.normal {
+    background-color: @alternate-normal-background;
+    text-color:       @alternate-normal-foreground;
+}
