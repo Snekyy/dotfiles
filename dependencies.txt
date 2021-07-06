@@ -1,0 +1,57 @@
+#
+# Gui
+#
+
+# Window manager
+bspwm
+# Hotkey daemon
+sxhkd
+# Compositor
+aur/picom-ibhagwan-git
+# Bar
+aur/polybar
+# Window switcher/app launcher
+community/rofi
+# Terminal emulator
+alacritty
+# Wallpaper
+nitrogen
+# Screen locker
+aur/i3lock-color-git
+# Screenshot tool
+flameshot
+
+#
+# Cli
+#
+
+# File manager
+ranger
+# preview images method
+ueberzug
+
+# Colorful replacement for ls
+exa
+
+# Sound (amixer/alsamixer)
+alsa-utils
+# Manage brightness
+brightnessctl
+
+# Archives
+tar
+bzip2
+unrar
+gzip
+unzip
+zstd
+
+#
+# Fonts
+#
+
+ttf-hack
+ttf-font-awesome
+ttf-unifont
+nerd-fonts-hack
+adobe-source-han-sans-jp-fonts

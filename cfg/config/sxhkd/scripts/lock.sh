@@ -18,9 +18,7 @@ timecolor=ffffffff
 # if you lock screen with "ru" layout you will can't enter password
 # with english characters, so
 # you will be stacked forever in this shit
-if [ $(setxkbmap -query|awk -F : 'NR==3{print $2}' | sed 's/ //g') == "ru" ]; then
-	bash ~/.config/sxhkd/scripts/chg_layout.sh
-fi
+setxkbmap us 
 
 i3lock -e \
     --clock --indicator \
