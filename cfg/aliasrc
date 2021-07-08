@@ -1,0 +1,30 @@
+# Colorize
+alias ls='exa --color=always --group-directories-first'
+alias grep='grep --color=always'
+alias pacman='sudo pacman --color=always'
+alias p='sudo pacman --color=always --disable-download-timeout'
+alias yay='yay --color=always --answerdiff None --disable-download-timeout'
+
+# ls tuning
+alias la='ls -aF'
+alias ll='ls -lgF'
+alias lla='ls -lagF'
+alias lt='ls -T --level=3'
+
+# Verbose
+alias mkdir="mkdir -v"
+
+# Confirm before overwriting something
+alias rm='rm -i'
+alias mv='mv -i'
+
+# Navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+# Remove orphaned packages
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
+
+# Reload shell
+alias reload='exec $SHELL'
