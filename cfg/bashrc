@@ -3,6 +3,9 @@
 
 [ -f "$HOME/.aliasrc" ] && source $HOME/.aliasrc
 
+# Disable software flow contol(^C/^Q)
+stty -ixon
+
 #
 # Prompt
 #
