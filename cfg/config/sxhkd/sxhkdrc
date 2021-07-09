@@ -20,7 +20,7 @@ alt + space
 
 # lock screen
 super + l
-    /bin/bash /home/snekyy/.config/sxhkd/scripts/lock.sh
+    /bin/bash /home/snekyy/.config/sxhkd/scripts/lock/lock.sh
 
 #
 # sxhkd binds
