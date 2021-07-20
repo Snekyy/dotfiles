@@ -11,7 +11,7 @@ aur/picom-ibhagwan-git
 # Bar
 aur/polybar
 # Window switcher/app launcher
-community/rofi
+rofi
 # Terminal emulator
 alacritty
 # Wallpaper
@@ -20,6 +20,11 @@ nitrogen
 aur/i3lock-color-git
 # Screenshot tool
 flameshot
+# Notification daemon
+dunst
+# Reader
+zathura
+zathura-pdf-mupdf
 
 #
 # Cli
@@ -51,7 +56,6 @@ zstd
 #
 
 ttf-hack
-ttf-font-awesome
 ttf-unifont
 nerd-fonts-hack
 adobe-source-han-sans-jp-fonts
