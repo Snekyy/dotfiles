@@ -10,14 +10,12 @@ stty -ixon
 # Prompt
 #
 
-# Powerline-shell
-if [ $(which powerline-shell &> /dev/null; echo $?) -eq 0 ] ; then
-    function _update_ps1() {
-        PS1=$(powerline-shell $?)
-    }
-    if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
-        PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-    fi
+# Powerline
+if [ -f /usr/lib/python3.9/site-packages/powerline/bindings/bash/powerline.sh ]; then
+    powerline-daemon -q
+    POWERLINE_BASH_CONTINUATION=1
+    POWERLINE_BASH_SELECT=1
+    source /usr/lib/python3.9/site-packages/powerline/bindings/bash/powerline.sh
 # Default
 else
     PS1=" \w \[\033[01;31m\]>\[\033[01;32m\]>\[\033[01;34m\]>\[\033[00m\] "

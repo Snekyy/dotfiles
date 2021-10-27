@@ -1,0 +1,27 @@
+{
+	"segments": {
+		"above": [{
+			"left": [
+				{
+					"function": "powerline.segments.shell.cwd",
+					"args": { "dir_limit_depth": 4, "dir_shorten_len": 10, "use_separator": true }
+				},
+				{
+					"function": "powerline.segments.shell.last_pipe_status"
+				},
+				{
+					"function": "powerline.segments.shell.jobnum"
+				}
+			]
+		}],
+		"left": [
+			{
+				"function": "powerline.segments.common.env.user"
+			},
+			{
+				"function": "powerline.segments.common.vcs.branch",
+				"args": { "status_colors": true }
+			}
+		]
+	}
+}

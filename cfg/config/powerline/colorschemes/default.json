@@ -1,0 +1,12 @@
+{
+	"name": "default",
+	"groups": {
+		"cwd": { "fg": "black", "bg": "purple" },
+		"cwd:divider": { "fg": "black", "bg": "purple" },
+		"cwd:current_folder": { "fg": "purple", "bg": "gray", "attrs": ["bold"] },
+		"user": { "fg": "black", "bg": "pink" },
+		"branch":  { "fg": "white", "bg": "gray", "attrs": [] },
+		"branch_clean":  { "fg": "blue", "bg": "gray", "attrs": [] },
+		"branch_dirty":  { "fg": "yellow", "bg": "gray", "attrs": [] }
+	}
+}
