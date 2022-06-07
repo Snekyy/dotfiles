@@ -1,7 +1,7 @@
 #!/bin/bash
 
 NODES_HIDDEN=$(bspc query -N -n .hidden)
-NODES=$(bspc query -N -n .tiled -d focused)
+NODES=$(bspc query -N -n .fullscreen -n .tiled -n .pseudo_tiled -n .floating -d .local)
 
 if [ $(echo $NODES_HIDDEN | wc -w) -eq 0 ]; then
     for node in $NODES; do

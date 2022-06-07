@@ -66,7 +66,7 @@ window:
 
   # GTK theme variant (Linux/BSD only)
   # Override the variant of the GTK theme.
-  #gtk_theme_variant: None
+  gtk_theme_variant: None
 
 
 scrolling:
@@ -105,7 +105,7 @@ font:
 
 
 # If `true`, bold text is drawn using the bright color variants.
-draw_bold_text_with_bright_colors: false
+draw_bold_text_with_bright_colors: true
 
 
 # Colors
@@ -130,13 +130,13 @@ colors:
   # Bright colors
   bright:
     black: '#101010'
-    white:   '#ffffff'
-    blue: '#0000ff'
-    cyan: '#00ffff'
-    green: '#00ff00'
-    magenta: '#ff00ff'
-    red: '#ff0000'
-    yellow: '#ffca00'
+    red: '#d84040'
+    green: '#40d640'
+    yellow: '#d7a840'
+    blue: '#2b78d6'
+    magenta: '#d841d8'
+    cyan: '#41d7d7'
+    white: '#ffffff'
 
   # Selection colors
   selection:
@@ -340,7 +340,6 @@ live_config_reload: true
 # shell.
 #
 # Default:
-#   - (macOS) /bin/bash --login
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 shell:

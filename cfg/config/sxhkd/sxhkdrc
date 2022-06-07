@@ -12,59 +12,50 @@ shift + @space
 
 # files manager
 shift + alt + e
-	alacritty -e ranger 
+	alacritty -e ranger
 
 # change keyboard layout
 alt + space
-    /bin/bash /home/snekyy/.config/sxhkd/scripts/chg_layout.sh
+	/bin/bash /home/snekyy/.config/sxhkd/scripts/chg_layout.sh
 
 # lock screen
 super + l
-    /bin/bash /home/snekyy/.config/sxhkd/scripts/lock/lock.sh
+	/bin/bash /home/snekyy/.config/sxhkd/scripts/lock/lock.sh
 
-#
-# sxhkd binds
-#
-
-# reload sxhkd configuration
-super + Escape
-	pkill -USR1 -x sxhkd
+# hide all windows(show desktop) NOT WORKING
+super + d
+    /bin/bash /home/snekyy/.config/sxhkd/scripts/toggle_hide_windows.sh
 
 #
 # function keys
 #
 
-# F1
-XF86AudioRaiseVolume
-	pactl set-sink-volume 0 +5%
+# Manage volume
+F86Audio{Raise,Lower}Volume
+	amixer -q set Master 5%{+,-}
 
-# F2
-XF86AudioLowerVolume
-	pactl set-sink-volume 0 -5%
-
-# F3
 XF86AudioMute
-	pactl set-sink-volume 0 0%
+	amixer set Master toggle
 
-# F4
-XF86MonBrightnessUp
-	brightnessctl set +5%
+# Manage brightness
+XF86MonBrightness{Up,Down}
+	brightnessctl set {+5%,5%-}
 
-# F5
-XF86MonBrightnessDown
-	brightnessctl set 5%-
-
-# F11 (Print button)
+# Screenshot
 super + p
 	flameshot gui
 
 #
-# bspwm hotkeys
+# bspwm/sxhkd
 #
 
 # quit/restart bspwm
 super + alt + {q,r}
 	bspc {quit,wm -r}
+
+# reload sxhkd configuration
+super + Escape
+	pkill -USR1 -x sxhkd
 
 # kill window
 ctrl + shift + w
@@ -96,11 +87,7 @@ super + ctrl + {m,x,y,z}
 
 # focus windows
 ctrl + {h,j,k,l}
-	bspc node -f {west,south,north,east}	
-
-# hide all windows(show desktop)
-super + d
-    /bin/bash /home/snekyy/.config/sxhkd/scripts/toggle_hide_windows.sh
+	bspc node -f {west,south,north,east}
 
 # focus/swap
 #

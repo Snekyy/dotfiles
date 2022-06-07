@@ -14,7 +14,7 @@ ringcolor=888888aa
 linecolor=303030ff
 
 keyhlcolor=ffaf00aa
-bshlcolor=d84040
+bshlcolor=d84040aa
 
 separatorcolor=ffffff00
 
