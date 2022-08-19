@@ -120,13 +120,7 @@ copyFiles() {
 	echo "--> Old dotfiles stored into $dots_old_dir"
 }
 
-finish() {
-	# Cleanup tmp files
-	rmdir /tmp/script_setup
-}
-
 
 systemCheck
 installDeps
 copyFiles
-finish

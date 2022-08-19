@@ -50,7 +50,7 @@ configuration {
 	kb-accept-custom: "";
 	kb-accept-alt: "";
 	kb-delete-entry: "";
-	kb-mode-next: "Tab";
+//	kb-mode-next: "Tab";
 	kb-mode-previous: "";
 	kb-row-left: "";
 	kb-row-right: "";
