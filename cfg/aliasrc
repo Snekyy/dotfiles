@@ -28,3 +28,8 @@ alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
 # Reload shell
 alias reload='exec $SHELL'
+
+# Latex
+alias xdvi='xdvi -s 0 -watchfile 0.5'
+
+alias iptables='sudo iptables'

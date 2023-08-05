@@ -35,6 +35,7 @@ systemCheck() {
 		read -r -p "-> Would you like to install yay? [Y/n]: " user_choice
 		case $user_choice in
 			[yY]|""|"Yes"|"yes")
+				mkdir -p /tmp/script_setup/yay
 				git clone https://aur.archlinux.org/yay.git /tmp/script_setup/yay
 				cd /tmp/script_setup/yay && makepkg -sri; cd .. && rm -rf yay
 				echo -e "$green[*]$reset Yay is installed"
@@ -78,20 +79,14 @@ copyFiles() {
 	# to tmp dir, rename "dotfiles" directory,
 	# and move tmp files to destination folder.
 	if [ -d "$dots_dir" ]; then
-		mkdir -p /tmp/script_setup/dotfiles_tmp
-		cp -r $repo_dir/cfg/* /tmp/script_setup/dotfiles_tmp
 		mv "$dots_dir" "$HOME/dotfiles_unknown"
-		echo "--> ! Found 'dotfiles' in your home directory, its renamed to 'dotfiles_unknown' ,"
-		echo "      It is may be a dotfiles repository directory !"
-		mkdir $dots_dir
-		mv /tmp/script_setup/dotfiles_tmp/* $dots_dir
-		rmdir /tmp/script_setup/dotfiles_tmp
-	# just copy dots
-	else
-		mkdir $dots_dir
-		cp $repo_dir/cfg/* -r $dots_dir
+		echo "--> ! Found 'dotfiles' in your home directory, its renamed to 'dotfiles_unknown' !"
 	fi
 
+	mkdir $dots_dir
+	cp $repo_dir/cfg/* -r $dots_dir
+
+	# Old dotfiles will be stored here
 	mkdir -p "$dots_old_dir/.config"
 	[ -d "$HOME/.config" ] || mkdir "$HOME/.config"
 
@@ -107,7 +102,7 @@ copyFiles() {
 		# move it to old_dotfiles directory
 		if [ -e "$HOME/.$file" ]; then
 			# If it is a dotfiles from ".config" folder
-			if [ $(echo $file | grep "config" > /dev/null 2>&1; echo $?) -eq 0 ]; then
+			if [ $(echo $file | grep "config" 2>/dev/null 1>/dev/null; echo $?) -eq 0 ]; then
 				mv "$HOME/.$file" "$dots_old_dir/.config/"
 			else
 				mv "$HOME/.$file" $dots_old_dir
@@ -117,7 +112,7 @@ copyFiles() {
 		ln -s $dots_dir/$file "$HOME/.$file"
 	done
 
-	echo "--> Old dotfiles stored into $dots_old_dir"
+	echo "--> Your ld dotfiles stored into $dots_old_dir"
 }
 
 

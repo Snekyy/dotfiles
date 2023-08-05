@@ -5,7 +5,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 /home/snekyy/.config/polybar/launch.sh &
 
 # Virtual desktops
-bspc monitor -d 一 ニ 三 四 五 六 
+bspc monitor -d 一 ニ 三 四 五 六
 
 # Bspwm configuration
 bspc config border_width         0

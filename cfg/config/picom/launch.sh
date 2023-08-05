@@ -10,4 +10,4 @@ while pgrep -u $UID -x picom >/dev/null; do sleep 0.5; done
  > /home/snekyy/.config/picom/error.log
 
 # Launch picom
-picom --experimental-backends --config $HOME/.config/picom/picom.conf --log-level "WARN" --show-all-xerrors 2>>$HOME/.config/picom/error.log &
+picom --config $HOME/.config/picom/picom.conf --log-level "WARN" --show-all-xerrors 2>> $HOME/.config/picom/error.log &

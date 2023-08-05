@@ -1,23 +1,43 @@
-set nocompatible    " Get rid of Vi compatibility mode.
+set nocompatible	" Get rid of Vi compatibility mode.
 
-syntax enable       " Highlight syntax
+syntax enable		" Highlight syntax
 
-set encoding=utf-8  " Unicode
-set wrap            " Handle long lines
+set encoding=utf-8	" Unicode
+set wrap			" Handle long lines
 
-set hlsearch        " Highlight search
-set ignorecase      " Ignore case when searching
+set hlsearch		" Highlight search
+set ignorecase		" Ignore case when searching
 
-set list            " Show hidden characters
-set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
+"set list			" Show hidden characters
+"set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
 
-set tabstop=4       " Tab spacing
-"set shiftwidth=4    " indent/outdent by 4 columns
-set shiftround      " always indent/outdent to the nearest tabstop
-set expandtab       " use spaces instead of tabs
-set smarttab        " Use tabs at the start of a line(spaces elsewhere)
+set tabstop=4		" Tab = 4 spaces
+"set shiftwidth=4	" indent/outdent by 4 columns
+set shiftround		" always indent/outdent to the nearest tabstop
+set noexpandtab		" use spaces instead of tabs
+set smarttab		" Use tabs at the start of a line(spaces elsewhere)
 
 " .rasi syntax
+" autocmd = au
 au BufNewFile,BufRead /*.rasi setf css
 
 set paste
+
+
+let mapleader='\'	" \ is a <Leader> key
+
+" Update file with '\ + W' hotkey in normal mode
+nnoremap <Leader>W :up<cr>
+
+au BufWritePost main.tex !latex <afile> ; pdflatex <afile>
+"au BufWritePost *.c !gcc <afile> -o <afile>.out && ./<afile>.out
+
+nnoremap <Leader>O :!xdvi -watchfile 0.5 -s 0 &>/dev/null & <cr><cr>
+
+fun! TexEnv(name)
+        let l:l = line(".") - 1
+        call append(l:l, "\\end{" . a:name . "}")
+        call append(l:l, "\\begin{" . a:name . "}")
+endfun
+
+nnoremap <C-e> :call TexEnv(input("TeX environment name: "))<CR>

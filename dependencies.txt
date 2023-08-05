@@ -2,14 +2,19 @@
 # Gui
 #
 
+# X window system
+xorg
+xorg-xinit
 # Window manager
 bspwm
 # Hotkey daemon
 sxhkd
 # Compositor
-aur/picom-ibhagwan-git
+picom
+# Login manager
+slim
 # Bar
-aur/polybar
+aur/polybar-git
 # Window switcher/app launcher
 rofi
 # Terminal emulator
@@ -24,7 +29,11 @@ flameshot
 dunst
 # Reader
 zathura
+zathura-djvu
 zathura-pdf-mupdf
+# Web browser
+firefox
+
 
 #
 # Cli
@@ -37,6 +46,9 @@ ueberzug
 
 # Colorful replacement for ls
 exa
+
+#checkupdates
+pacman-contrib
 
 # Sound (amixer/alsamixer)
 alsa-utils
@@ -52,10 +64,24 @@ unzip
 zstd
 
 #
+# Wifi
+#
+networkmanager
+wireless_tools
+
+#
+# Bluetooth
+#
+bluez
+bluez-utils
+pulseaudio-bluetooth
+
+#
 # Fonts
 #
 
 ttf-hack
 ttf-unifont
+aur/ttf-hack-nerd-font
 nerd-fonts-hack
 adobe-source-han-sans-jp-fonts
